@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+</head>
+<meta charset="UTF-8" />
+<title>Min enkle side</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f7fbff;
+    margin: 24px;
+    line-height: 1.5;
+}   
+h1 {color:#0b3d91; text-align: center;}
+h2 {margin-top: 28px ;}
+
+nav {
+    background: #0b3d91; text-align: center;
+    padding: 10px ;
+    text-align: center;
+    border-radius: 6px;
+    margin: 18px 0;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #c0392b;
+}
+img {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    margin: 16px auto;
+    border: 3px solid #000;
+    border-radius: 6px;
+}
+
+        </style>
+<body>
+<h1>Hei, velkommen 1</h1>
+<nav>
+<a href="#om">Om meg</a>
+<a href="#favoritt">Favorittakaktivitet</a>
+<a href="https://www.w3schools.com" target="_blank">Lær mer </a>
+</nav>
+<h2 id="om">Om meg</h2>
+<p>Detter er en kort presentasjon av meg. Jeg vil lære HTML og CSS </p>
+<h2 id="favoritt">Favorittaktivitet</h2>
+<p> Jeg liker å kode og gå tur.</p>
+<img src="https://www.w3schools.com/w3images/lights.jpg" alt="Utsikt over Chania" />
+<p>
+    Besøk gjerne
+    <a href="https://www.w3schools.com" target="_blank">W3Schools (html og css)</a>
+    for å lære mer om HTML og CSS.
+</p>
+</body>
+</html>
+
+
+   
