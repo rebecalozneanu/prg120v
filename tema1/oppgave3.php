@@ -10,5 +10,5 @@ $diferanse=$tall1-$tall2;
 print("<br />");
 print("summen er $sum");
 print("<br />");
-print("differansen er $diferansen");    
+print("differansen er $diferanse");    
 ?>  
