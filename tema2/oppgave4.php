@@ -31,3 +31,4 @@ else /* det er ikke svart verken j eller n på begge spørsmålene */
 print("Du har ikke svart ja eller nei p&aring; begge sp&oslash;rsm&aring;lene <br/>");
 }
 ?>
+
