@@ -1,5 +1,5 @@
 <?php
-$klassenr=$_POST[$klassenr];
+$klassenr=$_POST["klassenr"];
 if(!$klassenr){
     print("klassenr er ikke fylt ut </br>");
 
