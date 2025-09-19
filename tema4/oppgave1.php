@@ -11,6 +11,4 @@ if(!$postnr) {
 } else {
     print("$postnr");
 }
-
-print("$postnr");
 ?>
