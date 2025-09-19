@@ -16,13 +16,13 @@ else{
          print("første tegn må være en bokstav");
         
     } else if (ctype_digit($tegn2)) {
-        print("andre tegn skal være en bokstav")
+        print("andre tegn skal være en bokstav");
 
     }
     else if (!ctype_digit($step3)){
-        print("tredje skla være et tall")
+        print("tredje skla være et tall");
     }else{
-        print("det ble riktig klassenr $klassenr")
+        print("det ble riktig klassenr $klassenr");
     }
 }
 
