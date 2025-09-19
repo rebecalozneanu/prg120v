@@ -8,8 +8,8 @@ if(!$postnr) {
     
 } else if (!ctype_digit($postnr)) {
     print("Bruke tall")
-}else {
-    print ("$postnr")
+} else {
+    print("$postnr")
 }
 
 print("$postnr");
