@@ -19,7 +19,7 @@ else{
         print("andre tegn skal være en bokstav");
 
     }
-    else if (!ctype_digit($step3)){
+    else if (!ctype_digit($tegn3)){
         print("tredje skla være et tall");
     }else{
         print("det ble riktig klassenr $klassenr");
