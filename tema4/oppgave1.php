@@ -7,9 +7,9 @@ if(!$postnr) {
         print("Postnr må være på 4 tall </br>");
     
 } else if (!ctype_digit($postnr)) {
-    print("Bruke tall")
+    print("Bruke tall");
 } else {
-    print("$postnr")
+    print("$postnr");
 }
 
 print("$postnr");
