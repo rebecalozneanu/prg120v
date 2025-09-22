@@ -35,7 +35,7 @@ print ("Emnet er registrert fra f&oslashr");
 else
 {
 $sqlSetning="INSERT INTO emne (emnekode,emnenavn,studiumkode)
-VALUES('$emnekode','$emnenavn, $studiumkode');";
+VALUES('$emnekode','$emnenavn', '$studiumkode');";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
 /* SQL-setning sendt til database-serveren */
 print ("F&oslash;lgende studium er n&aring; registrert: $emnekode,$emnenavn,$studiumkode");
