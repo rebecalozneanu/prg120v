@@ -5,7 +5,7 @@
 */
 ?>
 <script src="funksjoner.js"> </script>
-<h3>Slett emne</h3>
+<h3>slette emne</h3>
 <form method="post" action="" id="sletteemneskjema" name="sletteemneskjema" onSubmit="return bekreft()">
 Emnekode <input type="text" id="sletteemne" name="sletteemne" required /> <br/>
 <input type="submit" value="Slett emne" name="sletteemneKnapp" id="sletteemneKnapp" />
