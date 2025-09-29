@@ -8,7 +8,7 @@
 <form method="post" action="" id="registrerStudiumSkjema" name="registrerStudiumSkjema">
 klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/>
 klassenavn <input type="text" id="klassenavn" name="klassenavn" required /> <br/>
-Studiumnavn <input type="text" id="studiumnavn" name="studiumnavn" required /> <br/>
+Studiumkode <input type="text" id="studiumnavn" name="studiumnavn" required /> <br/>
 <input type="submit" value="Registrer studium" id="registrerStudiumKnapp" name="registrerStudiumKnapp" />
 <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
 </form>
@@ -17,8 +17,8 @@ if (isset($_POST ["registrerStudiumKnapp"]))
 {
 $klassekode=$_POST ["klassekode"];
 $klassenavn=$_POST ["klassenavn"];
-$studiumnavn=$_POST ["studiumnavn"];
-if (!$klassekode || !$klassemnavn || !$studiumnavn)
+$studiumkode=$_POST ["studiumnavn"];
+if (!$klassekode || !$klassemnavn || !$studiumkode)
 {
 print ("Alle felt m&aring; fylles ut");
 }
