@@ -38,7 +38,7 @@ $sqlSetning="INSERT INTO studium (studiumkode,studiumnavn)
 VALUES('$klassekode','$klassenavn','$studiumkode');";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
 /* SQL-setning sendt til database-serveren */
-print ("F&oslash;lgende studium er n&aring; registrert: $studiumkode $studiumnavn");
+print ("F&oslash;lgende studium er n&aring; registrert: $klassekode $klassenavn $studiumkode");
 }
 }
 }
