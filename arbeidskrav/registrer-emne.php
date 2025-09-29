@@ -4,12 +4,13 @@
 /* Programmet registrerer data (studiumkode og studiumnavn) i databasen
 */
 ?>
-<h3>Registrer studium </h3>
+<h3>Registrer klasse
+    </h3>
 <form method="post" action="" id="registrerStudiumSkjema" name="registrerStudiumSkjema">
 klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/>
 klassenavn <input type="text" id="klassenavn" name="klassenavn" required /> <br/>
 Studiumkode <input type="text" id="studiumkode" name="studiumkode" required /> <br/>
-<input type="submit" value="Registrer studium" id="registrerStudiumKnapp" name="registrerStudiumKnapp" />
+<input type="submit" value="Registrer klasse" id="registrerStudiumKnapp" name="registrerStudiumKnapp" />
 <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
 </form>
 <?php
@@ -34,11 +35,11 @@ print ("Studiet er registrert fra f&oslashr");
 }
 else
 {
-$sqlSetning="INSERT INTO studium (studiumkode,studiumnavn)
+$sqlSetning="INSERT INTO klasse (klassekode,klassenavn,studiumkode)
 VALUES('$klassekode','$klassenavn','$studiumkode');";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
 /* SQL-setning sendt til database-serveren */
-print ("F&oslash;lgende studium er n&aring; registrert: $klassekode $klassenavn $studiumkode");
+print ("F&oslash;lgende klasse er n&aring; registrert: $klassekode $klassenavn $studiumkode");
 }
 }
 }
