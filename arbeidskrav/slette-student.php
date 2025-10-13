@@ -8,7 +8,7 @@
 <h3>slette student</h3>
 <form method="post" action="" id="sletteStudentSkjema" name="sletteStudentSkjema" onSubmit="return bekreft()">
 Studentkode <input type="text" id="studentkode" name="studentkode" required /> <br/>
-<input type="submit" value="Slett student" name="sletteStudentKnapp" id="sletteStudentKnapp" />
+<input type="submit" value="Slette student" name="sletteStudentKnapp" id="sletteStudentKnapp" />
 </form>
 <?php
 if (isset($_POST ["sletteStudentKnapp"]))
