@@ -14,7 +14,7 @@ Studentkode <input type="text" id="studentkode" name="studentkode" required /> <
 if (isset($_POST ["sletteStudentKnapp"]))
 {
 include("db-tilkobling.php"); /* tilkobling til database-serveren utført og valg av database foretatt */
-$studentumkode=$_POST ["studentkode"];
+$studentkode=$_POST ["studentkode"];
 $sqlSetning="DELETE FROM student WHERE studentkode='$studentkode';";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; slette data i databasen");
 /* SQL-setning sendt til database-serveren */
