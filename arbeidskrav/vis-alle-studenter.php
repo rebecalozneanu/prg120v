@@ -13,10 +13,9 @@ print ("<tr><th align=left>studiumkode</th> <th align=left>studiumnavn</th> </tr
 for ($r=1;$r<=$antallRader;$r++)
 {
 $rad=mysqli_fetch_array($sqlResultat); /* ny rad hentet fra spørringsresultatet */
-$klassekode=$rad["klassekode"];
 $studiumkode=$rad["studiumkode"];
 $studiumnavn=$rad["studiumnavn"];
-print ("<tr> <td> $klassekode </td> <td> $studiumkode </td> <td> $studiumnavn </td> </tr>");
+print ("<tr><td> $studiumkode </td> <td> $studiumnavn </td> </tr>");
 }
 print ("</table>");
 ?>
