@@ -3,7 +3,7 @@
 /* Programmet skriver ut alle registrerte studier
 */
 include("db-tilkobling.php"); /* tilkobling til database-serveren utført og valg av database foretatt */
-$sqlSetning="SELECT * FROM student ORDER BY brukenavn;";
+$sqlSetning="SELECT * FROM student ORDER BY brukernavn;";
 $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen");
 /* SQL-setning sendt til database-serveren */
 $antallRader=mysqli_num_rows($sqlResultat); /* antall rader i resultatet beregnet */
