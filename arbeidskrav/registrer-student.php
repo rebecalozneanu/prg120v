@@ -13,7 +13,7 @@ klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/
 <?php
 if (isset($_POST ["registrerStudiumKnapp"]))
 {
-$brukenavn=$_POST ["brukenavn"];
+$brukernavn=$_POST ["brukenavn"];
 $fornavn=$_POST ["fornavn"];
 $etternavn=$_POST ["etternavn"];
 $klassekode=$_POST ["klassekode"];
@@ -24,7 +24,7 @@ print ("Alle felt m&aring; fylles ut");
 else
 {
 include("db-tilkobling.php"); /* tilkobling til database-serveren utført og valg av database foretatt */
-$sqlSetning="SELECT * FROM student WHERE klassekode='$brukenavn';";
+$sqlSetning="SELECT * FROM student WHERE klassekode='$brukernavn';";
 $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen");
 $antallRader=mysqli_num_rows($sqlResultat);
 if ($antallRader!=0) /* studiet er registrert fra før */
@@ -34,10 +34,10 @@ print ("Studiet er registrert fra f&oslashr");
 else
 {
 $sqlSetning="INSERT INTO klasse (brukenavn,fornavn,etternavn,klassekode)
-VALUES('$brukenavn','$fornavn','$etternavn','$klassekode');";
+VALUES('$brukernavn','$fornavn','$etternavn','$klassekode');";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
 /* SQL-setning sendt til database-serveren */
-print ("F&oslash;lgende klasse er n&aring; registrert: $brukenavn $fornavn $etternavn $klassekode");
+print ("F&oslash;lgende klasse er n&aring; registrert: $brukernavn $fornavn $etternavn $klassekode");
 }
 }
 }
