@@ -3,7 +3,7 @@
 <h3>Registrer student
     </h3>
 <form method="post" action="" id="registrerStudiumSkjema" name="registrerStudiumSkjema">
-brukenavn <input type="text" id="brukenavn" name="brukenavn" required /> <br/>
+brukernavn <input type="text" id="brukernavn" name="brukernavn" required /> <br/>
 fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/>
 etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>
 klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/>
@@ -13,7 +13,7 @@ klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/
 <?php
 if (isset($_POST ["registrerStudiumKnapp"]))
 {
-$brukernavn=$_POST ["brukenavn"];
+$brukernavn=$_POST ["brukernavn"];
 $fornavn=$_POST ["fornavn"];
 $etternavn=$_POST ["etternavn"];
 $klassekode=$_POST ["klassekode"];
