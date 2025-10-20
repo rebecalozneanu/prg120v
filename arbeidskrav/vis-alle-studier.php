@@ -12,7 +12,7 @@ print ("<table border=1>");
 print ("<tr><th align=left>studentkode</th> <th align=left>studentnavn</th> </tr>");
 for ($r=1;$r<=$antallRader;$r++)
 {
-$rad=mysqli_fetch_array($sqlResultat); /* ny rad hentet fra spørringsresultatet */
+$rad=mysqli_fetch_array($sqlResultat);
 $studentkode=$rad["studentkode"];
 $elevnavn=$rad["studentnavn"];
 print ("<tr> <td> $studentkode </td> <td> $elevnavn </td> </tr>");
