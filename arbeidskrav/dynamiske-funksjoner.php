@@ -15,8 +15,8 @@ for ($r=1;$r<=$antallRader;$r++)
 $rad=mysqli_fetch_array($sqlResultat); /* ny rad hentet fra spørringsresultatet */
 $klassekode=$rad["klassekode"];
 $klassenavn=$rad["klassenavn"];
-$studiumkode=$rad["klassenavn"];
-print("<option value='$studiumkode'>$studiumkode $studiumnavn </option>"); /* ny verdi i listeboksen
+$studiumkode=$rad["studiumkode"];
+print("<option value='$klassekode'>$klassenavn $studiumkode </option>"); /* ny verdi i listeboksen
 laget */
 }
 }

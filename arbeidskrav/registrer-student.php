@@ -6,8 +6,15 @@
 brukernavn <input type="text" id="brukernavn" name="brukernavn" required /> <br/>
 fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/>
 etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>
-klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/>
-<input type="submit" value="Registrer klasse" id="registrerStudiumKnapp" name="registrerStudiumKnapp" />
+klassekode 
+<select id="klassekode" name="klassekode" required>
+    <option value="">Velg klassekode</option>
+    <option value="IT1">IT1</option>
+    <option value="IT2">IT2</option>
+    <option value="IT3">IT3</option>
+</select> <br/>
+
+<input type="submit" value="Registrer student" id="registrerStudiumKnapp" name="registrerStudiumKnapp" />
 <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
 </form>
 <?php
@@ -29,7 +36,7 @@ $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente dat
 $antallRader=mysqli_num_rows($sqlResultat);
 if ($antallRader!=0) /* studiet er registrert fra før */
 {
-print ("Studiet er registrert fra f&oslashr");
+print ("Studenten er registrert fra f&oslashr");
 }
 else
 {
