@@ -13,12 +13,23 @@
   Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/>
   Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>
   Klassekode 
-  <select id="klassekode" name="klassekode" required>
-    <option value="">Velg klassekode</option>
-    <option value="IT1">IT1</option>
-    <option value="IT2">IT2</option>
-    <option value="IT3">IT3</option>
-  </select> <br/>
+    <?php
+    // Dynamisk listeboks
+    include("db-tilkobling.php");
+
+    echo '<select name="klassekode" id="klassekode">';
+    echo '<option value=""> Velg klasse </option>';
+
+    $sql = "SELECT klassekode, klassenavn FROM klasse ORDER BY klassekode;";
+    $res = mysqli_query($db, $sql) or die("Feil ved henting av klasser fra databasen");
+    while ($rad = mysqli_fetch_assoc($res)) {
+        $kode = htmlspecialchars($rad['klassekode'], ENT_QUOTES, 'UTF-8');
+        $navn = htmlspecialchars($rad['klassenavn'], ENT_QUOTES, 'UTF-8');
+        echo "<option value=\"{$kode}\">{$kode} - {$navn}</option>";
+    }
+
+    echo '</select>';
+  ?> <br/>
   
   <input type="submit" value="Registrer student" id="registrerStudentKnapp" name="registrerStudentKnapp" />
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />

@@ -31,7 +31,7 @@ $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente dat
 $antallRader=mysqli_num_rows($sqlResultat);
 if ($antallRader!=0) /* studiet er registrert fra før */
 {
-print ("Studiet er registrert fra f&oslashr");
+print ("Klassen er registrert fra f&oslashr");
 }
 else
 {
